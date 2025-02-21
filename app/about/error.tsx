@@ -1,5 +1,5 @@
 'use client'
-const error = ({error}) => {
+const error = ({error}:{error : Error}) => {
   return (
     <div>error</div>
   )

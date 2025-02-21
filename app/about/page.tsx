@@ -9,8 +9,15 @@ const  fetchTodo = async() =>{
   return data
 }
 
+type Data  = {
+    id:string;
+    completed:string;
+    title:string;
+    userId:string;
+}
+
 const AboutPage = async() => {
-  const data = await fetchTodo()
+  const data:Data[] = await fetchTodo()
   console.log(data)
   return (
     <>

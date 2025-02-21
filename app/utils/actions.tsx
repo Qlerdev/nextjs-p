@@ -3,7 +3,7 @@
 import { revalidatePath } from "next/cache"
 import { redirect } from "next/dist/server/api-utils"
 
-export const createCamp = async(prevState,FormData) =>{
+export const createCamp = async(prevState:any,FormData:FormData) =>{
     await new Promise((resolve)=>{
         setInterval(resolve,1000)
     })
